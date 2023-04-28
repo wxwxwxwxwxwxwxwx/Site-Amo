@@ -1,0 +1,43 @@
+@import "../../style/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  padding-top: 3.5em;
+  &__wrapper {
+    display: flex;
+  }
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 0.625em;
+    margin-top: 0.625rem;
+    color: $lightText;
+  }
+  &__navigation {
+    margin-left: 3.25em;
+  }
+  &__list {
+    display: flex;
+    gap: 1.875em;
+  }
+  &__link {
+    list-style-type: none;
+  }
+  &__anchor,
+  &__phone {
+    text-decoration: none;
+    color: $lightText;
+  }
+  &__socials {
+    display: flex;
+  }
+  &__phone {
+    margin-right: 2.875em;
+  }
+  &__icons {
+    display: flex;
+    gap: 1.875em;
+  }
+}
