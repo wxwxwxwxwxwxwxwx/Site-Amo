@@ -15,7 +15,7 @@ const MainSection = () => {
 
   const advantagesMobile = [
     {title: "Skype аудит"},
-    {title: "30 виджетов"},
+    {title: "30 виджетов"},
     {title: "Dashboard"},
     {title: "Месяц аmoCRM"},
   ];

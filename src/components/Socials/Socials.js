@@ -5,9 +5,9 @@ import classNames from "classnames";
 
 import "./Socials.scss";
 
-const Socials = ({className}) => {
+const Socials = ({className, ...props}) => {
   return (
-    <div className={classNames(className, "icons")}>
+    <div className={classNames(className, "icons")} {...props}>
       <a target="_blank" href="https://t.me/+75555555555">
         <TelegramIcon className="icons__item" />
       </a>
