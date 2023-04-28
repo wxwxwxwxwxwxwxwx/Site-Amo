@@ -1,9 +1,6 @@
 @import "../../style/variables.scss";
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-self: flex-start;
   padding-top: 3.5em;
   &__wrapper {
     display: flex;
@@ -22,22 +19,76 @@
     display: flex;
     gap: 1.875em;
   }
-  &__link {
-    list-style-type: none;
-  }
-  &__anchor,
-  &__phone {
-    text-decoration: none;
-    color: $lightText;
-  }
   &__socials {
     display: flex;
   }
   &__phone {
     margin-right: 2.875em;
   }
-  &__icons {
-    display: flex;
-    gap: 1.875em;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+@media (max-width: 1366px) {
+  .header {
+    &__navigation {
+      margin-left: 2.5em;
+    }
+    &__phone {
+      margin-right: 2.5em;
+    }
+  }
+}
+
+@media (max-width: 1068px) {
+  .header {
+    padding-top: 2em;
+    &__socials,
+    &__phone {
+      display: none;
+    }
+    &__navigation {
+      margin-left: 0;
+    }
+    &__wrapper {
+      width: 100%;
+      justify-content: space-between;
+    }
+    &__list {
+      gap: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 1.25em 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    &__logo {
+      display: none;
+    }
+    &__navigation,
+    &__list {
+      width: 100%;
+      justify-content: space-between;
+    }
+    &__list {
+      gap: 0;
+    }
+    &__link:last-child {
+      display: none;
+    }
+    &__anchor {
+      font-size: 0.75em;
+      text-transform: uppercase;
+    }
   }
 }

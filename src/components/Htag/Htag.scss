@@ -1,0 +1,23 @@
+@import "../../style/variables.scss";
+
+.h1 {
+  font-size: 3em;
+  font-weight: 400;
+  color: $lightText;
+}
+
+.h2,
+.h3 {
+  font-size: 1.125em;
+  font-weight: 500;
+  color: $lightText;
+}
+
+@media (max-width: 1068px) {
+  .h1 {
+    font-size: 2.25em;
+  }
+  .h3 {
+    font-size: 1em;
+  }
+}

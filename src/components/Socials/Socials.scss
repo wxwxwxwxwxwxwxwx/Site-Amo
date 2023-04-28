@@ -1,0 +1,16 @@
+.icons {
+  display: flex;
+  gap: 1.875em;
+  &__item {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 640px) {
+  .icons {
+    &__item {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

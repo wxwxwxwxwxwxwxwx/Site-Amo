@@ -1,0 +1,187 @@
+@import "../../style/variables.scss";
+
+.main {
+  padding-top: 5.625em;
+  padding-bottom: 7.75em;
+
+  &__usp {
+    width: 30%;
+  }
+  &__gradient {
+    background: $primaryGradient;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+  }
+  &__description {
+    font-size: 1.125em;
+    margin-top: 1.875em;
+  }
+  &__advantages {
+    width: 30%;
+    text-align: right;
+  }
+  &__advantagesList {
+    margin-top: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.875em;
+  }
+  &__advantagesList-mobile {
+    display: none;
+  }
+  &__advantagesTitle {
+    text-transform: uppercase;
+  }
+  &__advantagesDescr {
+    margin-top: 0.375rem;
+    font-size: 1em;
+  }
+  &__button {
+    font-size: 1rem;
+    background-color: $activeBtn;
+    margin-top: 3.75em;
+    padding: 1.3em 2.125em;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  &__circle {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    transform: rotate(45deg);
+  }
+  &__circle-first {
+    width: 83px;
+    height: 83px;
+    top: 85px;
+    right: 55%;
+    background: rgb(255, 208, 208);
+    backdrop-filter: blur(4px);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    background: radial-gradient(
+      circle,
+      rgba(255, 208, 208, 0.7) 0%,
+      rgba(212, 93, 93, 0.3) 50%,
+      rgba(167, 49, 49, 0.25) 60%,
+      rgba(130, 25, 25, 0.2) 70%
+    );
+    background-position: -75px 0px;
+    background-size: 215%;
+    background-repeat: no-repeat;
+  }
+  &__circle-second {
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    right: 40%;
+    backdrop-filter: blur(4px);
+    filter: blur(4px);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    background: rgb(236, 208, 255);
+    background: radial-gradient(
+      circle,
+      rgba(236, 208, 255, 0.5) 0%,
+      rgba(161, 93, 207, 0.3) 54%,
+      rgba(118, 49, 164, 0.26) 66%,
+      rgba(86, 24, 128, 0.29) 78%
+    );
+    background-position: -30px 0px;
+    background-size: 155%;
+    background-repeat: no-repeat;
+  }
+  &__circle-third {
+    width: 28px;
+    height: 28px;
+    top: 500px;
+    right: 45%;
+    backdrop-filter: blur(4px);
+    filter: blur(4px);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    background: rgb(236, 208, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 208, 208, 0.9) 0%,
+      rgba(212, 93, 93, 0.5) 54%,
+      rgba(167, 49, 49, 0.4) 66%,
+      rgba(130, 25, 25, 0.4) 78%
+    );
+    background-position: -25px 0px;
+    background-size: 165%;
+    background-repeat: no-repeat;
+  }
+}
+
+.main > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1068px) {
+  .main {
+    &__usp {
+      width: 45%;
+    }
+    &__advantages {
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 6em;
+    padding-bottom: 6em;
+    &__usp {
+      width: 100%;
+    }
+    &__description {
+      margin-top: 15px;
+    }
+    &__gradient-second {
+      text-transform: lowercase;
+    }
+    &__advantages {
+      width: 100%;
+      text-align: left;
+      margin-top: 45px;
+    }
+    &__button,
+    &__advantagesList {
+      display: none;
+    }
+    &__advantagesList-mobile {
+      display: grid;
+      gap: 14px 10px;
+    }
+    &__advantagesLi-mobile {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &__advantagesHr {
+      width: 10px;
+      height: 1px;
+      border: none;
+      background: $primaryGradient;
+    }
+    &__advantagesTitle-mobile {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+  .main > div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    background-image: url(../../assets/mobileBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
