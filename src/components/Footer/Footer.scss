@@ -13,7 +13,7 @@
   &__link {
     font-family: "Inter", sans-serif;
     font-size: 0.875em;
-    color: #656566;
+    color: $grayLink;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 20px;
@@ -92,7 +92,7 @@
     margin-top: 0;
     padding-top: 2.5em;
     padding-bottom: 3.75em;
-    background-color: #0e1014;
+    background-color: $deepBlue;
     &__navigation {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, auto);
