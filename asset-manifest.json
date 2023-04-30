@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Site-Amo/static/css/main.20dee1c0.css",
+    "main.css": "/Site-Amo/static/css/main.8371ccc5.css",
     "main.js": "/Site-Amo/static/js/main.f917f06b.js",
     "static/media/noise.png": "/Site-Amo/static/media/noise.e46d074b0e5d05e036ac.png",
     "static/media/logo.svg": "/Site-Amo/static/media/logo.46f0d3cb17f3423e6f48fdfa8f4174db.svg",
@@ -8,11 +8,11 @@
     "static/media/viber.svg": "/Site-Amo/static/media/viber.57168ea357602e466d0ffe75cfe4e4a8.svg",
     "index.html": "/Site-Amo/index.html",
     "static/media/telegram.svg": "/Site-Amo/static/media/telegram.fe699dc2f6090f2682544d2cdb1acd74.svg",
-    "main.20dee1c0.css.map": "/Site-Amo/static/css/main.20dee1c0.css.map",
+    "main.8371ccc5.css.map": "/Site-Amo/static/css/main.8371ccc5.css.map",
     "main.f917f06b.js.map": "/Site-Amo/static/js/main.f917f06b.js.map"
   },
   "entrypoints": [
-    "static/css/main.20dee1c0.css",
+    "static/css/main.8371ccc5.css",
     "static/js/main.f917f06b.js"
   ]
 }
