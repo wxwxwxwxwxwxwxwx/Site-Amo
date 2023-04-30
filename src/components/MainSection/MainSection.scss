@@ -205,7 +205,8 @@
   .main {
     overflow: hidden;
     position: relative;
-    background-image: url(../../assets/noise.svg);
+    background-image: url(../../assets/noise.png);
+    background-size: cover;
     padding-top: 6em;
     padding-bottom: 6em;
     &__usp {
