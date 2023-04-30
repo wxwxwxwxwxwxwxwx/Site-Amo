@@ -5,7 +5,7 @@
   &_purple,
   &_white {
     position: absolute;
-    filter: blur(196px);
+    filter: blur(190px);
     opacity: 0.5;
   }
 
@@ -26,14 +26,14 @@
     left: -102px;
     top: 251px;
     z-index: 1;
-    background: #961a1a;
+    background: $redLight;
   }
   &_purple {
     width: 270px;
     height: 270px;
-    left: 60vw;
+    left: 55vw;
     top: -154px;
-    background: #833ab4;
+    background: $purpleLight;
   }
 }
 .ball {
