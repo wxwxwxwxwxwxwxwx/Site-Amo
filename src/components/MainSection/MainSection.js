@@ -21,6 +21,13 @@ const MainSection = () => {
   ];
   return (
     <section className="main">
+      <div className="blur_white"></div>
+      <div className="blur_red"></div>
+      <div className="blur_purple"></div>
+      <div className="ball_purple"></div>
+      <div className="ball_red"></div>
+      <div className="ball_red-huge"></div>
+
       <div className="container">
         <div className="main__usp">
           <Htag tag="h1">

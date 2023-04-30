@@ -11,9 +11,6 @@ html,
 body {
   font-size: 1rem;
   background-color: $deepBlue;
-  background-image: url(../assets/desktopBg.svg);
-  background-repeat: no-repeat;
-  background-position: -300px -350px;
 }
 
 li {
@@ -36,21 +33,7 @@ a {
   }
 }
 
-@media (max-width: 1068px) {
-  body {
-    background-position: 0px 0px;
-    background-size: contain;
-  }
-  .container {
-    width: 100%;
-    padding: 0 1em;
-  }
-}
-
-@media (max-width: 640px) {
-  body {
-    background-image: none;
-  }
+@media (max-width: 768px) {
   .container {
     width: 100%;
     padding: 0 1em;

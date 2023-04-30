@@ -1,5 +1,105 @@
 @import "../../style/variables.scss";
 
+.blur {
+  &_red,
+  &_purple,
+  &_white {
+    position: absolute;
+    filter: blur(196px);
+    opacity: 0.5;
+  }
+
+  &_white {
+    display: none;
+    width: 100px;
+    height: 100px;
+    filter: blur(100px);
+    opacity: 1;
+    left: -30px;
+    top: 0px;
+    z-index: 1;
+    background: $white;
+  }
+  &_red {
+    width: 300px;
+    height: 300px;
+    left: -102px;
+    top: 251px;
+    z-index: 1;
+    background: #961a1a;
+  }
+  &_purple {
+    width: 270px;
+    height: 270px;
+    left: 60vw;
+    top: -154px;
+    background: #833ab4;
+  }
+}
+.ball {
+  &_red-huge,
+  &_red,
+  &_purple {
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    background-repeat: no-repeat;
+  }
+  &_red-huge {
+    width: 83px;
+    height: 83px;
+    top: 80px;
+    left: 36vw;
+    background: rgb(255, 208, 208);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    background: radial-gradient(
+      circle,
+      rgba(255, 208, 208, 0.7) 0%,
+      rgba(212, 93, 93, 0.3) 50%,
+      rgba(167, 49, 49, 0.25) 60%,
+      rgba(130, 25, 25, 0.2) 70%
+    );
+    background-position: -75px 0px;
+    background-size: 215%;
+  }
+  &_red {
+    width: 28px;
+    height: 28px;
+    left: 58vw;
+    top: 550px;
+    filter: blur(4px);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    background: rgb(236, 208, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 208, 208, 0.9) 0%,
+      rgba(212, 93, 93, 0.5) 54%,
+      rgba(167, 49, 49, 0.4) 66%,
+      rgba(130, 25, 25, 0.4) 78%
+    );
+    background-position: -25px 0px;
+    background-size: 165%;
+  }
+  &_purple {
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    left: 60vw;
+    filter: blur(4px);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    background: rgb(236, 208, 255);
+    background: radial-gradient(
+      circle,
+      rgba(236, 208, 255, 0.5) 0%,
+      rgba(161, 93, 207, 0.3) 54%,
+      rgba(118, 49, 164, 0.26) 66%,
+      rgba(86, 24, 128, 0.29) 78%
+    );
+    background-position: -30px 0px;
+    background-size: 155%;
+  }
+}
 .main {
   padding-top: 5.625em;
   padding-bottom: 7.75em;
@@ -47,91 +147,65 @@
     color: $white;
     cursor: pointer;
   }
-  &__circle {
-    position: absolute;
-    z-index: 1;
-    border-radius: 50%;
-    transform: rotate(45deg);
-  }
-  &__circle-first {
-    width: 83px;
-    height: 83px;
-    top: 85px;
-    right: 55%;
-    background: rgb(255, 208, 208);
-    backdrop-filter: blur(4px);
-    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
-    background: radial-gradient(
-      circle,
-      rgba(255, 208, 208, 0.7) 0%,
-      rgba(212, 93, 93, 0.3) 50%,
-      rgba(167, 49, 49, 0.25) 60%,
-      rgba(130, 25, 25, 0.2) 70%
-    );
-    background-position: -75px 0px;
-    background-size: 215%;
-    background-repeat: no-repeat;
-  }
-  &__circle-second {
-    width: 60px;
-    height: 60px;
-    top: -10px;
-    right: 40%;
-    backdrop-filter: blur(4px);
-    filter: blur(4px);
-    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
-    background: rgb(236, 208, 255);
-    background: radial-gradient(
-      circle,
-      rgba(236, 208, 255, 0.5) 0%,
-      rgba(161, 93, 207, 0.3) 54%,
-      rgba(118, 49, 164, 0.26) 66%,
-      rgba(86, 24, 128, 0.29) 78%
-    );
-    background-position: -30px 0px;
-    background-size: 155%;
-    background-repeat: no-repeat;
-  }
-  &__circle-third {
-    width: 28px;
-    height: 28px;
-    top: 500px;
-    right: 45%;
-    backdrop-filter: blur(4px);
-    filter: blur(4px);
-    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
-    background: rgb(236, 208, 255);
-    background: radial-gradient(
-      circle,
-      rgba(255, 208, 208, 0.9) 0%,
-      rgba(212, 93, 93, 0.5) 54%,
-      rgba(167, 49, 49, 0.4) 66%,
-      rgba(130, 25, 25, 0.4) 78%
-    );
-    background-position: -25px 0px;
-    background-size: 165%;
-    background-repeat: no-repeat;
-  }
 }
 
-.main > div {
+.main .container {
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 1068px) {
+  .ball {
+    &_purple {
+      top: -32px;
+    }
+  }
   .main {
     &__usp {
-      width: 45%;
+      width: 40%;
     }
     &__advantages {
-      width: 45%;
+      width: 40%;
     }
   }
 }
 
 @media (max-width: 768px) {
+  .blur {
+    &_white {
+      display: block;
+    }
+    &_purple {
+      top: 150px;
+      left: auto;
+      right: 0;
+    }
+    &_red {
+      top: 130px;
+    }
+  }
+  .ball {
+    &_red {
+      top: 480px;
+      width: 43px;
+      height: 43px;
+      left: 10vw;
+    }
+    &_purple {
+      width: 40px;
+      height: 40px;
+      left: 85vw;
+      top: 320px;
+    }
+    &_red-huge {
+      display: none;
+    }
+  }
+
   .main {
+    overflow: hidden;
+    position: relative;
+    background-image: url(../../assets/noise.svg);
     padding-top: 6em;
     padding-bottom: 6em;
     &__usp {
@@ -173,15 +247,7 @@
       font-size: 13px;
     }
   }
-  .main > div {
+  .main .container {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 640px) {
-  .main {
-    background-image: url(../../assets/mobileBg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }

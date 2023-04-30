@@ -37,17 +37,30 @@ const Footer = () => {
                   <Paragraph className="footer__link" href="#">
                     {item.title.name}
                   </Paragraph>
-                  <ul className="footer__secondLevelList">
-                    {item.links.map(({name}) => {
-                      return (
-                        <li key={uuidv4()}>
-                          <a className="footer__anchor" href="#">
-                            {name}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <div className="footer__wrapper">
+                    <ul className="footer__secondLevelList">
+                      {item.links.slice(0, 5).map(({name}) => {
+                        return (
+                          <li key={uuidv4()}>
+                            <a className="footer__anchor" href="#">
+                              {name}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    <ul className="footer__secondLevelList">
+                      {item.links.slice(5).map(({name}) => {
+                        return (
+                          <li key={uuidv4()}>
+                            <a className="footer__anchor" href="#">
+                              {name}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </li>
               </ul>
             );
@@ -79,7 +92,7 @@ const Footer = () => {
           </ul>
         </nav>
         <div className="footer__terms">
-          <Paragraph className="footer__rights">©WELBEX 2022. Все права защищены.</Paragraph>
+          <Paragraph className="footer__rights">©WELBEX 2023. Все права защищены.</Paragraph>
           <a className="footer__privacy" href="#">
             Политика конфиденциальности
           </a>
