@@ -2,6 +2,8 @@
 
 .header {
   padding-top: 3.5em;
+  position: relative;
+  z-index: 2;
   &__wrapper {
     display: flex;
   }
@@ -71,7 +73,6 @@
 @media (max-width: 640px) {
   .header {
     position: fixed;
-    z-index: 2;
     top: 0;
     left: 0;
     right: 0;

@@ -157,7 +157,7 @@
 @media (max-width: 1068px) {
   .ball {
     &_purple {
-      top: -32px;
+      top: -40px;
     }
   }
   .main {
@@ -195,7 +195,7 @@
       width: 40px;
       height: 40px;
       left: 85vw;
-      top: 320px;
+      top: 365px;
     }
     &_red-huge {
       display: none;
@@ -203,12 +203,12 @@
   }
 
   .main {
-    overflow: hidden;
-    position: relative;
     background-image: url(../../assets/noise.png);
+    position: relative;
+    overflow: hidden;
     background-size: cover;
-    padding-top: 6em;
-    padding-bottom: 6em;
+    padding-top: 6.125em;
+    padding-bottom: 3.75em;
     &__usp {
       width: 100%;
     }
