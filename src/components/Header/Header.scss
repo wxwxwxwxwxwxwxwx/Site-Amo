@@ -46,7 +46,11 @@
 
 @media (max-width: 1068px) {
   .header {
-    padding-top: 2em;
+    padding: 1.25em 0;
+    &__wrapper {
+      align-items: center;
+    }
+    &__text,
     &__socials,
     &__phone {
       display: none;
@@ -66,7 +70,6 @@
 
 @media (max-width: 640px) {
   .header {
-    padding: 1.25em 0;
     position: fixed;
     z-index: 2;
     top: 0;
