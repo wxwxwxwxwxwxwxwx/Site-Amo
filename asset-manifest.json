@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/Site-Amo/static/css/main.ef06e4e1.css",
-    "main.js": "/Site-Amo/static/js/main.1a0567d1.js",
-    "static/media/mobileBg.png": "/Site-Amo/static/media/mobileBg.e6baf158ebc653b4a0aa.png",
-    "static/media/desktopBg.svg": "/Site-Amo/static/media/desktopBg.490a6a69d4399b652c1d.svg",
+    "main.css": "/Site-Amo/static/css/main.11e5c701.css",
+    "main.js": "/Site-Amo/static/js/main.ecfb5eba.js",
+    "static/media/noise.svg": "/Site-Amo/static/media/noise.1d692df5a3965489f74a.svg",
     "static/media/logo.svg": "/Site-Amo/static/media/logo.46f0d3cb17f3423e6f48fdfa8f4174db.svg",
     "static/media/whatsapp.svg": "/Site-Amo/static/media/whatsapp.ebe720f0c912eda28e2bf0613c18300f.svg",
     "static/media/viber.svg": "/Site-Amo/static/media/viber.57168ea357602e466d0ffe75cfe4e4a8.svg",
     "index.html": "/Site-Amo/index.html",
     "static/media/telegram.svg": "/Site-Amo/static/media/telegram.fe699dc2f6090f2682544d2cdb1acd74.svg",
-    "main.ef06e4e1.css.map": "/Site-Amo/static/css/main.ef06e4e1.css.map",
-    "main.1a0567d1.js.map": "/Site-Amo/static/js/main.1a0567d1.js.map"
+    "main.11e5c701.css.map": "/Site-Amo/static/css/main.11e5c701.css.map",
+    "main.ecfb5eba.js.map": "/Site-Amo/static/js/main.ecfb5eba.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef06e4e1.css",
-    "static/js/main.1a0567d1.js"
+    "static/css/main.11e5c701.css",
+    "static/js/main.ecfb5eba.js"
   ]
 }
