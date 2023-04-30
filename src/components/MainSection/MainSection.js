@@ -31,7 +31,8 @@ const MainSection = () => {
       <div className="container">
         <div className="main__usp">
           <Htag tag="h1">
-            Зарабатывайте больше <span className="main__gradient">с WELBEX</span>
+            Зарабатывайте больше <br />
+            <span className="main__gradient">с WELBEX</span>
           </Htag>
           <Paragraph className="main__description">Развиваем и контролируем продажи за вас</Paragraph>
         </div>
